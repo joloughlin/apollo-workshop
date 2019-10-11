@@ -32,3 +32,5 @@ Set-up instructions:
   Note: Nearly all of the of the UI components are built for you. Most of the work still to be done is in     `MissionListContainer`
   
 3. Use this to help craft your query! https://api.spacex.land/graphql/
+
+This is what the final project looks like: https://codesandbox.io/s/github/joloughlin/apollo-workshop/tree/apollo-solution
