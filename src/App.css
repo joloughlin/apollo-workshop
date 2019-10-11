@@ -20,3 +20,64 @@
 .App-link {
   color: #09d3ac;
 }
+
+.outer-container {
+  background: #f6f6f8;
+}
+
+.container { 
+  max-width: 960px; 
+  margin: auto;
+  padding: 15px;
+}
+
+.loading {
+  text-align: center;
+  font-family: Impact, sans-serif; 
+  font-size: 24px; 
+}
+
+.title {
+  font-family: Impact, sans-serif;
+  text-align: center;
+  color: darkgreen;
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
+.mission-title {
+  font-size: 18px;
+  font-family: Impact, sans-serif;
+  padding-bottom: 10px;
+}
+
+.mission-card {
+  background: white; 
+  width: 320px; 
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.08);
+}
+
+.mission-list-container {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mission-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.mission-link { 
+  font-size: 16px;
+  font-weight: bold;  
+  color: darkgreen;
+  padding-top: 20px; 
+}
+
+.link-container {
+  margin-top: 20px;
+}
