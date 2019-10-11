@@ -2,16 +2,7 @@ import React from 'react'
 import { useQuery } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'
 
-const GET_MISSIONS = gql`
-  {
-    missions(limit: 50) {
-      name
-      description 
-      wikipedia
-    }
-  }
-`
-
+//Hint: You should not need to change this component
 const Mission = ({ mission }) => (
   <div class='mission-card'>
     <div class='mission-title'>{mission.name}</div>
@@ -22,25 +13,24 @@ const Mission = ({ mission }) => (
   </div>
 )
 
+//Hint: You should not need to change this component
 const MissionList = ({ missions }) => (
   <div class='mission-list-container'>
     {missions.map((mission => <Mission mission={mission} />))}
   </div>
 )
 
+//Hint: You should not need to change this component
 const Loading = () => (
   <div class='loading'>
     Loading...
   </div>
 )
 
-export const MissionListContainer = () => {
-  const { loading, error, data } = useQuery(GET_MISSIONS)
-  if (loading) return <Loading />
-  if (error) return `Error: ${error.message}`
+//Todo: fetch the necessary data from the server
+export const MissionListContainer = () => { 
   return (
     <div>
-      <MissionList missions={data.missions} />
     </div>
   )
 }
